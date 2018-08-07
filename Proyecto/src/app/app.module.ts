@@ -8,6 +8,9 @@ import { MostrarCompuComponent } from './mostrar-compu/mostrar-compu.component';
 import { IngresarCompuComponent } from './ingresar-compu/ingresar-compu.component';
 import { IngresarMonitorComponent } from './ingresar-monitor/ingresar-monitor.component';
 
+//rutas
+import { app_routing} from "./app.route";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,8 @@ import { IngresarMonitorComponent } from './ingresar-monitor/ingresar-monitor.co
     IngresarMonitorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+      app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]
