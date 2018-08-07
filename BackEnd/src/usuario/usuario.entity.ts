@@ -1,5 +1,4 @@
-import {Column, Entity, OneToMany, PrimaryGeneratedColumn} from "typeorm";
-import {AutorEntity} from "../autor/autor.entity";
+import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity('usuario')
 export class UsuarioEntity {
@@ -17,11 +16,4 @@ export class UsuarioEntity {
 
     @Column({ length: 500 })
     apellidoUsuario: string;
-
-    @OneToMany(
-        type => AutorEntity,
-        autor => autor.usuarios
-    )
-
-    autores: number;
 }
