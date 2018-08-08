@@ -4,18 +4,13 @@ import {getMongoManager} from "typeorm";
 
 @Injectable()
 export class UsuarioService {
-    constructor(
-        ) {
+
+    constructor() {
 
     }
 
-    crearUsuario() {
-    const manager = getMongoManager();
-            const usuario = new UsuarioEntity();
-            usuario.user = "shan4ty300";
-            usuario.password = "pp300";
-            usuario.nombreUsuario = "Ronny";
-            usuario.apellidoUsuario = "Cabrera";
+    crearUsuario(usuario: UsuarioEntity): Promise<UsuarioEntity> {
+        const manager = getMongoManager();
         return manager.save(usuario);
     }
 }

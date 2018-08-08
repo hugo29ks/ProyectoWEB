@@ -2,9 +2,7 @@ import * as Joi from 'joi';
 
 export const USUARIO_SCHEMA = Joi
     .object()
-    .key({
-        idUsuario: Joi
-            .number(),
+    .keys({
         user: Joi
             .string()
             .regex(/^[a-zA-Z]{3,30}$/)
