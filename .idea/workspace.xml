@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdebd530-6a2b-43d4-b6d1-972c0aad3ce7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/item/item.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/item/item.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/item/item.schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/item/item.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/pipes/autor.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/pipes/libro.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,50 +13,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="item.controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.controller.ts">
+      <file leaf-file-name="item.pipe.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.schema.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.schema.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.entity.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.entity.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="135">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuario.schema.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.schema.ts">
+      <file leaf-file-name="usuario.pipe.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/usuario.pipe.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#75#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,6 +69,7 @@
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.entity.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.controller.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.schema.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts" />
       </list>
     </option>
   </component>
@@ -152,6 +120,13 @@
               <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
               <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controladores" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
@@ -224,12 +199,12 @@
       <workItem from="1533701170240" duration="196000" />
       <workItem from="1533701469544" duration="4834000" />
       <workItem from="1533738764568" duration="3636000" />
-      <workItem from="1533743161513" duration="496000" />
+      <workItem from="1533743161513" duration="739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28103000" />
+    <option name="totallyTimeSpent" value="28346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -273,13 +248,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -441,13 +409,6 @@
     <entry file="file://$PROJECT_DIR$/BackEnd/src/exceptions/peticion-invalida.exception.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/usuario.pipe.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -482,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.schema.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -499,6 +453,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.schema.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.schema.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -506,17 +481,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.entity.ts">
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/usuario.pipe.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/item/item.schema.ts">
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
