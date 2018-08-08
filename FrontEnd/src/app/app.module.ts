@@ -10,6 +10,8 @@ import { IngresarMonitorComponent } from './ingresar-monitor/ingresar-monitor.co
 
 //rutas
 import { app_routing} from "./app.route";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { app_routing} from "./app.route";
   ],
   imports: [
     BrowserModule,
-      app_routing
+    app_routing,
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
