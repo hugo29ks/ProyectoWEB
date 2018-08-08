@@ -5,6 +5,9 @@ import {TypeOrmModule} from "@nestjs/typeorm";
 import {UsuarioEntity} from "./usuario/usuario.entity";
 import {UsuarioController} from "./usuario/usuario.controller";
 import {UsuarioService} from "./usuario/usuario.service";
+import {ItemController} from "./item/item.controller";
+import {ItemService} from "./item/item.service";
+import {ItemEntity} from "./item/item.entity";
 
 @Module({
   imports: [
@@ -18,9 +21,9 @@ import {UsuarioService} from "./usuario/usuario.service";
           entities: [__dirname + '/../**/*.entity{.ts,.js}'],
           synchronize: true,
       }),
-      TypeOrmModule.forFeature([UsuarioEntity])
+      TypeOrmModule.forFeature([UsuarioEntity, ItemEntity])
   ],
-  controllers: [AppController, UsuarioController],
-  providers: [AppService, UsuarioService],
+  controllers: [AppController, UsuarioController, ItemController],
+  providers: [AppService, UsuarioService, ItemService],
 })
 export class AppModule {}

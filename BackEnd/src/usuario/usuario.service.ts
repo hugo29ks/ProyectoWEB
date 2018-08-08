@@ -1,6 +1,6 @@
 import {Injectable} from "@nestjs/common";
 import {UsuarioEntity} from "./usuario.entity";
-import {getMongoManager} from "typeorm";
+import {getMongoManager, getMongoRepository} from "typeorm";
 
 @Injectable()
 export class UsuarioService {
@@ -9,8 +9,13 @@ export class UsuarioService {
 
     }
 
-    crearUsuario(usuario: UsuarioEntity): Promise<UsuarioEntity> {
+    crearUsuario(usuario: UsuarioEntity) {
         const manager = getMongoManager();
         return manager.save(usuario);
+    }
+
+    async listarTodos(): Promise<UsuarioEntity[]> {
+        const manager = getMongoRepository(UsuarioEntity);
+        return await manager.find();
     }
 }
