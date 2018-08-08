@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdebd530-6a2b-43d4-b6d1-972c0aad3ce7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,13 +14,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="item.pipe.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts">
+      <file leaf-file-name="usuario.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="250">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding>
-                <element signature="e#0#75#0" expanded="true" />
+                <element signature="e#0#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,6 +34,15 @@
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuario.controller.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -62,14 +72,14 @@
         <option value="$PROJECT_DIR$/BackEnd/src/usuario/usuario.entity.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/pipes/usuario.pipe.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/usuario/usuario.schema.ts" />
-        <option value="$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts" />
-        <option value="$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/app.module.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.entity.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.controller.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/item/item.schema.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts" />
       </list>
     </option>
   </component>
@@ -92,7 +102,8 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-36" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
@@ -126,35 +137,33 @@
               <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
               <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controladores" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pipes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="usuario" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoWEB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoWEB" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,12 +208,12 @@
       <workItem from="1533701170240" duration="196000" />
       <workItem from="1533701469544" duration="4834000" />
       <workItem from="1533738764568" duration="3636000" />
-      <workItem from="1533743161513" duration="739000" />
+      <workItem from="1533743161513" duration="1895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28346000" />
+    <option name="totallyTimeSpent" value="29502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -216,18 +225,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="-36" y="23" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32843137" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27799842" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27799842" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32843137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31862745" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31862745" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -248,20 +257,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -409,16 +404,6 @@
     <entry file="file://$PROJECT_DIR$/BackEnd/src/exceptions/peticion-invalida.exception.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -433,13 +418,6 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -491,13 +469,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/pipes/item.pipe.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/usuario/usuario.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
         </state>
       </provider>
     </entry>

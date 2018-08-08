@@ -18,4 +18,9 @@ export class UsuarioService {
         const manager = getMongoRepository(UsuarioEntity);
         return await manager.find();
     }
+
+    async buscarUsuario(userBuscar: string, passwordBuscar: string): Promise<UsuarioEntity> {
+        const manager = getMongoManager();
+        return await manager.findOne(UsuarioEntity, {user: userBuscar, password: passwordBuscar});
+    }
 }
