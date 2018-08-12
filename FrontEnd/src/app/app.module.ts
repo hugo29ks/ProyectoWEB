@@ -12,6 +12,7 @@ import { IngresarMonitorComponent } from './ingresar-monitor/ingresar-monitor.co
 import { app_routing} from "./app.route";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {FormsModule} from "@angular/forms";
     LoginComponent,
     MostrarCompuComponent,
     IngresarCompuComponent,
-    IngresarMonitorComponent
+    IngresarMonitorComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
