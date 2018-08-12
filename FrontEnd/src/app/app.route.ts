@@ -11,7 +11,7 @@ const app_routes: Routes = [
   { path: 'ingresar-compu', component: IngresarCompuComponent},
   { path: 'mostrar-compu', component: MostrarCompuComponent},
   { path: 'home', component: IngresarMonitorComponent},
-  { path: '**', pathMatch: 'full', redirectTo: 'login'}
+  { path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ];
 
