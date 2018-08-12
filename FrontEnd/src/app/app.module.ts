@@ -13,6 +13,9 @@ import { app_routing} from "./app.route";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { TablaComponent } from './tabla/tabla.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     MostrarCompuComponent,
     IngresarCompuComponent,
     IngresarMonitorComponent,
-    NavBarComponent
+    NavBarComponent,
+    TablaComponent
   ],
   imports: [
     BrowserModule,
