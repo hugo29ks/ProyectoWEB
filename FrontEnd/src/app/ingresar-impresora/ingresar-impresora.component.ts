@@ -25,6 +25,7 @@ export class IngresarImpresoraComponent implements OnInit {
   ultimoMantenimientoImpresora = "";
   empleadoImpresora = "";
   comentarioImpresora = "";
+  estado = false;
 
   ngOnInit() {
   }
@@ -42,6 +43,7 @@ export class IngresarImpresoraComponent implements OnInit {
     this.proveedorImpresora === "" &&
     this.ultimoMantenimientoImpresora === "" &&
     this.empleadoImpresora === "") {
+      this.estado = true;
       console.log("Error campos vacios");
     } else {
       this._itemServicio.saveImpresora(this.nombreImpresora, this.tipoImpresora, this.fabricanteImpresora, this.modeloImpresora, this.numeroSerieImpresora, this.numeroInventarioImpresora, this.localizacionImpresora, this.estadoImpresora, this.adquisicionImpresora, this.proveedorImpresora, this.ultimoMantenimientoImpresora, this.empleadoImpresora, this.comentarioImpresora);

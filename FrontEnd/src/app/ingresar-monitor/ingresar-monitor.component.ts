@@ -27,6 +27,7 @@ export class IngresarMonitorComponent implements OnInit {
   proveedorMonitor = "";
   empleadoMonitor = "";
   comentarioMonitor = "";
+  estado = false;
 
   ngOnInit() {
   }
@@ -45,6 +46,7 @@ export class IngresarMonitorComponent implements OnInit {
       this.proveedorMonitor === "" &&
       this.empleadoMonitor === ""
     ){
+      this.estado = true;
       console.log("Error campos vacios");
     } else {
       this._itemServicio.saveMonitor(this.nombreMonitor, this.tipoMonitor, this.fabricanteMonitor, this.modeloMonitor, this.tamanio, this.numeroSerieMonitor, this.numeroInventarioMonitor, this.localizacionMonitor, this.estadoMonitor, this.adquisicionMonitor, this.proveedorMonitor, this.empleadoMonitor,this.comentarioMonitor);

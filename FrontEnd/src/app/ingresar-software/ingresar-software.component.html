@@ -85,6 +85,10 @@
     <div class="col-sm-1"></div>
 
 
+    <div class="col-sm-12" *ngIf="estado === true">
+      <p style="color: red">* Ingrese todos los Campos</p>
+    </div>
+
     <div class="col-sm-2"></div>
     <button type="button" class="btn btn-primary btn-lg btn-block mb-2 col-sm-5" (click)="guardar()">GUARDAR</button>
 

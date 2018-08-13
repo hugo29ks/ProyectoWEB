@@ -24,6 +24,7 @@ export class IngresarTecladoComponent implements OnInit {
   proveedorTeclado = "";
   empleadoTeclado = "";
   comentarioTeclado = "";
+  estado = false;
 
   ngOnInit() {
   }
@@ -40,6 +41,7 @@ export class IngresarTecladoComponent implements OnInit {
     this.adquisicionTeclado === "" &&
     this.proveedorTeclado === "" &&
     this.empleadoTeclado === "") {
+      this.estado = true;
       console.log("Error campos vacios");
     } else {
       this._itemServicio.saveTeclado(this.nombreTeclado, this.tipoTeclado, this.fabricanteTeclado, this.modeloTeclado, this.numeroSerieTeclado, this.numeroInventarioTeclado, this.localizacionTeclado, this.estadoTeclado, this.adquisicionTeclado, this.proveedorTeclado, this.empleadoTeclado, this.comentarioTeclado);

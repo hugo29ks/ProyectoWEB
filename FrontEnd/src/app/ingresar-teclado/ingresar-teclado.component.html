@@ -111,6 +111,11 @@
       </div>
       <input type="text" class="form-control" placeholder=" " [(ngModel)]="comentarioTeclado">
     </div>
+
+    <div class="col-sm-12" *ngIf="estado === true">
+      <p style="color: red">* Ingrese todos los Campos</p>
+    </div>
+
     <div class="col-sm-8"></div>
 
     <div class="col-sm-2"></div>

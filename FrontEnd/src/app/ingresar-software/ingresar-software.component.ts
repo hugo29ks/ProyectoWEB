@@ -21,6 +21,7 @@ export class IngresarSoftwareComponent implements OnInit {
   proveedorSoftware = "";
   empleadoSoftware = "";
   comentarioSodtware = "";
+  estado = false;
 
   ngOnInit() {
   }
@@ -34,6 +35,7 @@ export class IngresarSoftwareComponent implements OnInit {
       this.adquisionSoftware === "" &&
       this.proveedorSoftware === "" &&
       this.empleadoSoftware === "") {
+      this.estado = true;
       console.log("Error campos vacios");
     }
     else {
