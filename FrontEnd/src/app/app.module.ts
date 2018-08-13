@@ -14,6 +14,13 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TablaComponent } from './tabla/tabla.component';
+import { MostrarMonitorComponent } from './mostrar-monitor/mostrar-monitor.component';
+import { IngresarImpresoraComponent } from './ingresar-impresora/ingresar-impresora.component';
+import { IngresarTecladoComponent } from './ingresar-teclado/ingresar-teclado.component';
+import { IngresarSoftwareComponent } from './ingresar-software/ingresar-software.component';
+import { MostrarSoftwareComponent } from './mostrar-software/mostrar-software.component';
+import { MostrarTecladoComponent } from './mostrar-teclado/mostrar-teclado.component';
+import { MostrarImpresoraComponent } from './mostrar-impresora/mostrar-impresora.component';
 
 
 
@@ -26,7 +33,14 @@ import { TablaComponent } from './tabla/tabla.component';
     IngresarCompuComponent,
     IngresarMonitorComponent,
     NavBarComponent,
-    TablaComponent
+    TablaComponent,
+    MostrarMonitorComponent,
+    IngresarImpresoraComponent,
+    IngresarTecladoComponent,
+    IngresarSoftwareComponent,
+    MostrarSoftwareComponent,
+    MostrarTecladoComponent,
+    MostrarImpresoraComponent
   ],
   imports: [
     BrowserModule,
