@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ItemServicio} from "../servicios/item.servicio";
 
 @Component({
     selector: 'app-mostrar-compu',
@@ -7,15 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarCompuComponent implements OnInit {
 
-    constructor() { }
+    constructor(private _itemServicio: ItemServicio) { }
 
-    arregloDatos = [['kevin','lala','lala','lala','lala','lala','lala','8'],
-        ['jorgillo','lala','lala','lala','lala','lala','lala','8'],
-        ['danilo','lala','lala','lala','lala','lala','lala','8'],
-        ['Fernando', 'algo', 'algo', 'algo', "algo", "algo", "algo", "algo"],
-        ['Victor', 'algo', "algo", "algo", "algo", "algo", "algo", "algo"]]
+    computadoras = [];
 
     ngOnInit() {
+      this._itemServicio.getItem("computadora").subscribe(
+        (result: any[]) => {
+          this.computadoras = result;
+          console.log(this.computadoras);
+        }
+      );
     }
-
 }

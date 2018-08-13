@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ItemServicio} from "../servicios/item.servicio";
 
 @Component({
   selector: 'app-mostrar-impresora',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarImpresoraComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _itemServicio: ItemServicio) { }
+
+  impresoras = [];
 
   ngOnInit() {
+    this._itemServicio.getItem("impresora").subscribe(
+      (result: any[]) => {
+        this.impresoras = result;
+        console.log(this.impresoras);
+      }
+    );
   }
 
 }

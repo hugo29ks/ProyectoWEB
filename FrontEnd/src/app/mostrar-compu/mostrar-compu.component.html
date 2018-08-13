@@ -1,7 +1,5 @@
 <app-nav-bar></app-nav-bar>
-<p></p>
 <div class="container">
-
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-2">
@@ -22,31 +20,39 @@
 
 <dt>
     <div class="row container-fluid centrar">
-        <div class="col-sm-1 border">Nombre</div>
-        <div class="col-sm-1 border">Tipo</div>
-        <div class="col-sm-2 border">Fabricante</div>
-        <div class="col-sm-1 border">N°Serie</div>
-        <div class="col-sm-2 border">N° Inventario</div>
-        <div class="col-sm-2 border">Localizacion</div>
-        <div class="col-sm-1 border">Estado</div>
-        <div class="col-sm-2 border">Comentario</div>
+      <div class="col-sm-1 border">Nombre</div>
+      <div class="col-sm-1 border">Tipo</div>
+      <div class="col-sm-2 border">Fabricante</div>
+      <div class="col-sm-2 border">Modelo</div>
+      <div class="col-sm-1 border">N°Serie</div>
+      <div class="col-sm-1 border">N°Inventario</div>
+      <div class="col-sm-2 border">Localizacion</div>
+      <div class="col-sm-1 border">Estado</div>
+      <div class="col-sm-2 border">Adquision</div>
+      <div class="col-sm-2 border">Proveedor</div>
+      <div class="col-sm-2 border">Mantenimiento</div>
+      <div class="col-sm-2 border">Actualizacion</div>
+      <div class="col-sm-2 border">Empleado</div>
+      <div class="col-sm-2 border">Comentario</div>
     </div>
 </dt>
 
-<div class="row centrar">
-    <div class="col-sm-12" *ngFor="let dato of arregloDatos[0]; let indice=index">
-        <app-tabla
-                [nombre]="arregloDatos[indice][0]"
-                [tipo]="arregloDatos[indice][1]"
-                [fabricante]="arregloDatos[indice][2]"
-                [serie]="arregloDatos[indice][3]"
-                [inventario]="arregloDatos[indice][4]"
-                [localizacion]="arregloDatos[indice][5]"
-                [estado]="arregloDatos[indice][6]"
-                [comentario]="arregloDatos[indice][7]"
-        ></app-tabla>
-    </div>
-</div>
+<div class="row container-fluid centrar" *ngFor="let computadora of computadoras">
+    <div class="col-sm-1 border">{{computadora.nombreItem}}</div>
+    <div class="col-sm-1 border">{{computadora.tipo}}</div>
+    <div class="col-sm-2 border">{{computadora.fabricante}}</div>
+  <div class="col-sm-2 border">{{computadora.modelo}}</div>
+    <div class="col-sm-1 border">{{computadora.numeroSerie}}</div>
+  <div class="col-sm-2 border">{{computadora.numeroInventario}}</div>
+  <div class="col-sm-2 border">{{computadora.localizacion}}</div>
+    <div class="col-sm-2 border">{{computadora.estado}}</div>
+    <div class="col-sm-2 border">{{computadora.anioAdquisicion}}</div>
+    <div class="col-sm-1 border">{{computadora.proveedor}}</div>
+    <div class="col-sm-2 border">{{computadora.ultimoMantenimiento}}</div>
+    <div class="col-sm-2 border">{{computadora.ultimaActualizacion}}</div>
+    <div class="col-sm-2 border">{{computadora.empleado}}</div>
+    <div class="col-sm-2 border">{{computadora.comentario}}</div>
+  </div>
 
 <br>
 <div class="row">

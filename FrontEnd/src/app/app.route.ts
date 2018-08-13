@@ -11,10 +11,14 @@ import {IngresarImpresoraComponent} from "./ingresar-impresora/ingresar-impresor
 import {MostrarImpresoraComponent} from "./mostrar-impresora/mostrar-impresora.component";
 import {IngresarSoftwareComponent} from "./ingresar-software/ingresar-software.component";
 import {MostrarSoftwareComponent} from "./mostrar-software/mostrar-software.component";
+import {ModuleWithProviders} from "@angular/core";
+import {NavBarComponent} from "./nav-bar/nav-bar.component";
 
-const app_routes: Routes = [
+export const AppRoute: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'login'},
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent},
+  { path: 'navbar', component: NavBarComponent},
   { path: 'ingresar-compu', component: IngresarCompuComponent},
   { path: 'mostrar-compu', component: MostrarCompuComponent},
   { path: 'ingresar-monitor', component: IngresarMonitorComponent},
@@ -25,8 +29,6 @@ const app_routes: Routes = [
   { path: 'mostrar-impresora', component: MostrarImpresoraComponent},
   { path: 'ingresar-software', component: IngresarSoftwareComponent},
   { path: 'mostrar-software', component: MostrarSoftwareComponent},
-  { path: '**', pathMatch: 'full', redirectTo: 'home'}
-
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes, {useHash: true});
+export const routing:ModuleWithProviders = RouterModule.forRoot(AppRoute);

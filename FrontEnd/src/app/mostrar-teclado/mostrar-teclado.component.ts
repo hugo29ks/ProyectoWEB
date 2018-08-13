@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ItemServicio} from "../servicios/item.servicio";
 
 @Component({
   selector: 'app-mostrar-teclado',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarTecladoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _itemServicio: ItemServicio) { }
+
+  teclados = [];
 
   ngOnInit() {
+    this._itemServicio.getItem("teclado").subscribe(
+      (result: any[]) => {
+        this.teclados = result;
+        console.log(this.teclados);
+      }
+    );
   }
 
 }

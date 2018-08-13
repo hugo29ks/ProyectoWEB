@@ -1,6 +1,6 @@
 import {Injectable} from "@nestjs/common";
 import {ItemEntity} from "./item.entity";
-import {getManager, getMongoRepository} from "typeorm";
+import {Equal, getManager, getMongoRepository} from "typeorm";
 
 @Injectable()
 export class ItemService {
@@ -13,8 +13,8 @@ export class ItemService {
         return manager.save(item);
     }
 
-    async listarTodos(): Promise<ItemEntity[]> {
+    async listarTodos(element: string): Promise<ItemEntity[]> {
         const manager = getMongoRepository(ItemEntity);
-        return await manager.find();
+        return await manager.find({elemento: element});
     }
 }

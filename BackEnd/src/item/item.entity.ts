@@ -6,6 +6,9 @@ export class ItemEntity {
     idItem: ObjectID;
 
     @Column({ length: 500 })
+    elemento: string;
+
+    @Column({ length: 500 })
     nombreItem: string;
 
     @Column({ length: 500 })
@@ -17,14 +20,29 @@ export class ItemEntity {
     @Column({ length: 500 })
     modelo: string;
 
+    @Column()
+    tamanio: number;
+
+    @Column({ length: 500 })
+    licencia: string;
+
+    @Column({ length: 500 })
+    arquitectura: string;
+
+    @Column({ length: 500 })
+    tiempoValidez: string;
+
     @Column({ length: 500 })
     numeroSerie: string;
+
+    @Column({ length: 500 })
+    numeroInventario: string;
 
     @Column({ length: 500 })
     localizacion: string;
 
     @Column({ length: 500 })
-    estado: boolean;
+    estado: string;
 
     @Column({ length: 500 })
     anioAdquisicion: string;

@@ -1,4 +1,4 @@
-import {Body, Controller, Get, HttpStatus, Post, Req, Res} from "@nestjs/common";
+import {Body, Controller, Get, HttpStatus, Param, Post, Req, Res} from "@nestjs/common";
 import {ItemService} from "./item.service";
 import {ItemEntity} from "./item.entity";
 
@@ -12,11 +12,17 @@ export class ItemController {
     @Post()
     crearItem(@Body() bodyParams) {
         const itemNuevo = new ItemEntity();
+        itemNuevo.elemento = bodyParams.elemento;
         itemNuevo.nombreItem = bodyParams.nombreItem;
         itemNuevo.tipo = bodyParams.tipo;
         itemNuevo.fabricante = bodyParams.fabricante;
         itemNuevo.modelo = bodyParams.modelo;
+        itemNuevo.tamanio = bodyParams.tamanio;
+        itemNuevo.licencia = bodyParams.licencia;
+        itemNuevo.arquitectura = bodyParams.arquitectura;
+        itemNuevo.tiempoValidez = bodyParams.tiempoValidez;
         itemNuevo.numeroSerie = bodyParams.numeroSerie;
+        itemNuevo.numeroInventario = bodyParams.numeroInventario;
         itemNuevo.localizacion = bodyParams.localizacion;
         itemNuevo.estado = bodyParams.estado;
         itemNuevo.anioAdquisicion = bodyParams.anioAdquisicion;
@@ -29,10 +35,11 @@ export class ItemController {
         return this._itemService.crearItem(itemNuevo);
     }
 
-    @Get()
+    @Get('/:element')
     async listarTodos(@Res() response,
-                      @Req() request) {
-        const items = await this._itemService.listarTodos();
+                      @Req() request,
+                      @Param() paramParams) {
+        const items = await this._itemService.listarTodos(paramParams.element);
         if(Object.keys(items).length === 0) {
             return response.send({
                 mensaje: "No existe ningun Item",

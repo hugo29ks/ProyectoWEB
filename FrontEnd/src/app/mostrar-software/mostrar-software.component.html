@@ -21,31 +21,29 @@
 <br>
 
 <dt>
-    <div class="row container-fluid centrar">
-        <div class="col-sm-1 border">Nombre</div>
-        <div class="col-sm-1 border">Tipo</div>
-        <div class="col-sm-2 border">Fabricante</div>
-        <div class="col-sm-1 border">N°Serie</div>
-        <div class="col-sm-2 border">N° Inventario</div>
-        <div class="col-sm-2 border">Localizacion</div>
-        <div class="col-sm-1 border">Estado</div>
-        <div class="col-sm-2 border">Comentario</div>
-    </div>
+  <div class="row container-fluid centrar">
+    <div class="col-sm-1 border">Nombre</div>
+    <div class="col-sm-2 border">Fabricante</div>
+    <div class="col-sm-2 border">Codigo</div>
+    <div class="col-sm-2 border">Arquitectura</div>
+    <div class="col-sm-2 border">Tiempo Validez</div>
+    <div class="col-sm-2 border">Adquision</div>
+    <div class="col-sm-2 border">Proveedor</div>
+    <div class="col-sm-2 border">Empleado</div>
+    <div class="col-sm-2 border">Comentario</div>
+  </div>
 </dt>
 
-<div class="row centrar">
-    <div class="col-sm-12" *ngFor="let dato of arregloDatos[0]; let indice=index">
-        <app-tabla
-                [nombre]="arregloDatos[indice][0]"
-                [tipo]="arregloDatos[indice][1]"
-                [fabricante]="arregloDatos[indice][2]"
-                [serie]="arregloDatos[indice][3]"
-                [inventario]="arregloDatos[indice][4]"
-                [localizacion]="arregloDatos[indice][5]"
-                [estado]="arregloDatos[indice][6]"
-                [comentario]="arregloDatos[indice][7]"
-        ></app-tabla>
-    </div>
+<div class="row container-fluid centrar" *ngFor="let software of softwares">
+  <div class="col-sm-1 border">{{software.nombreItem}}</div>
+  <div class="col-sm-2 border">{{software.fabricante}}</div>
+  <div class="col-sm-2 border">{{software.licencia}}</div>
+  <div class="col-sm-1 border">{{software.arquitectura}}</div>
+  <div class="col-sm-2 border">{{software.tiempoValidez}}</div>
+  <div class="col-sm-2 border">{{software.anioAdquisicion}}</div>
+  <div class="col-sm-1 border">{{software.proveedor}}</div>
+  <div class="col-sm-2 border">{{software.empleado}}</div>
+  <div class="col-sm-2 border">{{software.comentario}}</div>
 </div>
 
 <br>

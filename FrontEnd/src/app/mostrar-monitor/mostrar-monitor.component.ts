@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ItemServicio} from "../servicios/item.servicio";
 
 @Component({
   selector: 'app-mostrar-monitor',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarMonitorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _itemServicio: ItemServicio) { }
+
+  monitores = [];
 
   ngOnInit() {
+    this._itemServicio.getItem("monitor").subscribe(
+      (result: any[]) => {
+        this.monitores = result;
+        console.log(this.monitores);
+      }
+    );
   }
-
 }

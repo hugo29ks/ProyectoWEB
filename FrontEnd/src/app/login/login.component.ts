@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  regirigir() {
+  login() {
     if(this.usuario === "" && this.password === "") {
       console.log("Error campos vacios");
     }
@@ -41,5 +41,4 @@ export class LoginComponent implements OnInit {
       )
     }
   }
-
 }

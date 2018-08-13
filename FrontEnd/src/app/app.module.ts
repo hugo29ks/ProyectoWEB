@@ -8,8 +8,7 @@ import { MostrarCompuComponent } from './mostrar-compu/mostrar-compu.component';
 import { IngresarCompuComponent } from './ingresar-compu/ingresar-compu.component';
 import { IngresarMonitorComponent } from './ingresar-monitor/ingresar-monitor.component';
 
-//rutas
-import { app_routing} from "./app.route";
+import {AppRoute} from "./app.route";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -21,6 +20,9 @@ import { IngresarSoftwareComponent } from './ingresar-software/ingresar-software
 import { MostrarSoftwareComponent } from './mostrar-software/mostrar-software.component';
 import { MostrarTecladoComponent } from './mostrar-teclado/mostrar-teclado.component';
 import { MostrarImpresoraComponent } from './mostrar-impresora/mostrar-impresora.component';
+import {RouterModule} from "@angular/router";
+import {UsuarioServicio} from "./servicios/usuario.servicio";
+import {ItemServicio} from "./servicios/item.servicio";
 
 
 
@@ -44,12 +46,15 @@ import { MostrarImpresoraComponent } from './mostrar-impresora/mostrar-impresora
   ],
   imports: [
     BrowserModule,
-    app_routing,
-    BrowserModule,
     HttpClientModule,
     FormsModule,
+    RouterModule.forRoot(
+      AppRoute,{
+        useHash: true
+      }
+    )
   ],
-  providers: [],
+  providers: [HomeComponent, UsuarioServicio, ItemServicio],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
