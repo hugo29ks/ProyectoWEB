@@ -9,7 +9,7 @@ export class ItemController {
 
     }
 
-    @Post()
+    @Post('/Computadora')
     crearItem(@Body() bodyParams) {
         const itemNuevo = new ItemEntity();
         itemNuevo.elemento = bodyParams.elemento;
@@ -17,10 +17,6 @@ export class ItemController {
         itemNuevo.tipo = bodyParams.tipo;
         itemNuevo.fabricante = bodyParams.fabricante;
         itemNuevo.modelo = bodyParams.modelo;
-        itemNuevo.tamanio = bodyParams.tamanio;
-        itemNuevo.licencia = bodyParams.licencia;
-        itemNuevo.arquitectura = bodyParams.arquitectura;
-        itemNuevo.tiempoValidez = bodyParams.tiempoValidez;
         itemNuevo.numeroSerie = bodyParams.numeroSerie;
         itemNuevo.numeroInventario = bodyParams.numeroInventario;
         itemNuevo.localizacion = bodyParams.localizacion;
@@ -34,6 +30,86 @@ export class ItemController {
 
         return this._itemService.crearItem(itemNuevo);
     }
+
+    @Post('/Impresora')
+    crearImpresora(@Body() bodyParams) {
+        const itemNuevo = new ItemEntity();
+        itemNuevo.elemento = bodyParams.elemento;
+        itemNuevo.nombreItem = bodyParams.nombreItem;
+        itemNuevo.tipo = bodyParams.tipo;
+        itemNuevo.fabricante = bodyParams.fabricante;
+        itemNuevo.modelo = bodyParams.modelo;
+        itemNuevo.numeroSerie = bodyParams.numeroSerie;
+        itemNuevo.numeroInventario = bodyParams.numeroInventario;
+        itemNuevo.localizacion = bodyParams.localizacion;
+        itemNuevo.estado = bodyParams.estado;
+        itemNuevo.anioAdquisicion = bodyParams.anioAdquisicion;
+        itemNuevo.proveedor = bodyParams.proveedor;
+        itemNuevo.ultimoMantenimiento = bodyParams.ultimoMantenimiento;
+        itemNuevo.empleado = bodyParams.empleado;
+        itemNuevo.comentario = bodyParams.comentario;
+
+        return this._itemService.crearItem(itemNuevo);
+    }
+
+    @Post('/Monitor')
+    crearMonitor(@Body() bodyParams) {
+        const itemNuevo = new ItemEntity();
+        itemNuevo.elemento = bodyParams.elemento;
+        itemNuevo.nombreItem = bodyParams.nombreItem;
+        itemNuevo.tipo = bodyParams.tipo;
+        itemNuevo.fabricante = bodyParams.fabricante;
+        itemNuevo.modelo = bodyParams.modelo;
+        itemNuevo.tamanio = bodyParams.tamanio;
+        itemNuevo.numeroSerie = bodyParams.numeroSerie;
+        itemNuevo.numeroInventario = bodyParams.numeroInventario;
+        itemNuevo.localizacion = bodyParams.localizacion;
+        itemNuevo.estado = bodyParams.estado;
+        itemNuevo.anioAdquisicion = bodyParams.anioAdquisicion;
+        itemNuevo.proveedor = bodyParams.proveedor;
+        itemNuevo.empleado = bodyParams.empleado;
+        itemNuevo.comentario = bodyParams.comentario;
+
+        return this._itemService.crearItem(itemNuevo);
+    }
+
+    @Post('/Monitor')
+    crearTeclado(@Body() bodyParams) {
+        const itemNuevo = new ItemEntity();
+        itemNuevo.elemento = bodyParams.elemento;
+        itemNuevo.nombreItem = bodyParams.nombreItem;
+        itemNuevo.tipo = bodyParams.tipo;
+        itemNuevo.fabricante = bodyParams.fabricante;
+        itemNuevo.modelo = bodyParams.modelo;
+        itemNuevo.numeroSerie = bodyParams.numeroSerie;
+        itemNuevo.numeroInventario = bodyParams.numeroInventario;
+        itemNuevo.localizacion = bodyParams.localizacion;
+        itemNuevo.estado = bodyParams.estado;
+        itemNuevo.anioAdquisicion = bodyParams.anioAdquisicion;
+        itemNuevo.proveedor = bodyParams.proveedor;
+        itemNuevo.empleado = bodyParams.empleado;
+        itemNuevo.comentario = bodyParams.comentario;
+
+        return this._itemService.crearItem(itemNuevo);
+    }
+
+    @Post('/Software')
+    crearSoftware(@Body() bodyParams) {
+        const itemNuevo = new ItemEntity();
+        itemNuevo.elemento = bodyParams.elemento;
+        itemNuevo.nombreItem = bodyParams.nombreItem;
+        itemNuevo.fabricante = bodyParams.fabricante;
+        itemNuevo.licencia = bodyParams.licencia;
+        itemNuevo.arquitectura = bodyParams.arquitectura;
+        itemNuevo.tiempoValidez = bodyParams.tiempoValidez;
+        itemNuevo.anioAdquisicion = bodyParams.anioAdquisicion;
+        itemNuevo.proveedor = bodyParams.proveedor;
+        itemNuevo.empleado = bodyParams.empleado;
+        itemNuevo.comentario = bodyParams.comentario;
+
+        return this._itemService.crearItem(itemNuevo);
+    }
+
 
     @Get('/:element')
     async listarTodos(@Res() response,

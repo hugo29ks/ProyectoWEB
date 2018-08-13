@@ -37,6 +37,6 @@ export class ItemServicio {
     body = body.set('empleado', empleadoSoftware.toString());
     body = body.set('comentario', comentarioSoftware.toString());
 
-    return this.http.post(`http://localhost:3000/Item/`, body, {headers: header});
+    return this.http.post(`http://localhost:3000/Item/Software`, body, {headers: header});
   }
 }
