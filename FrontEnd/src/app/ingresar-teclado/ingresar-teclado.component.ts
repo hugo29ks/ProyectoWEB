@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ItemServicio} from "../servicios/item.servicio";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-ingresar-teclado',
@@ -7,9 +9,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngresarTecladoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _itemServicio: ItemServicio,
+              private _router: Router) { }
+
+  nombreTeclado = "";
+  tipoTeclado = "";
+  fabricanteTeclado = "";
+  modeloTeclado = "";
+  numeroSerieTeclado = "";
+  numeroInventarioTeclado = "";
+  localizacionTeclado = "";
+  estadoTeclado = "";
+  adquisicionTeclado = "";
+  proveedorTeclado = "";
+  empleadoTeclado = "";
+  comentarioTeclado = "";
 
   ngOnInit() {
+  }
+
+  guardar() {
+    if(this.nombreTeclado === "" &&
+    this.tipoTeclado === "" &&
+    this.fabricanteTeclado === "" &&
+    this.modeloTeclado === "" &&
+    this.numeroSerieTeclado === "" &&
+    this.numeroInventarioTeclado === "" &&
+    this.localizacionTeclado === "" &&
+    this.estadoTeclado === "" &&
+    this.adquisicionTeclado === "" &&
+    this.proveedorTeclado === "" &&
+    this.empleadoTeclado === "") {
+      console.log("Error campos vacios");
+    } else {
+      this._itemServicio.saveTeclado(this.nombreTeclado, this.tipoTeclado, this.fabricanteTeclado, this.modeloTeclado, this.numeroSerieTeclado, this.numeroInventarioTeclado, this.localizacionTeclado, this.estadoTeclado, this.adquisicionTeclado, this.proveedorTeclado, this.empleadoTeclado, this.comentarioTeclado);
+      this._router.navigate(['/mostrar-teclado']);
+    }
   }
 
 }

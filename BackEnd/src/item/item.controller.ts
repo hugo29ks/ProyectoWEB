@@ -73,7 +73,7 @@ export class ItemController {
         return this._itemService.crearItem(itemNuevo);
     }
 
-    @Post('/Monitor')
+    @Post('/Teclado')
     crearTeclado(@Body() bodyParams) {
         const itemNuevo = new ItemEntity();
         itemNuevo.elemento = bodyParams.elemento;

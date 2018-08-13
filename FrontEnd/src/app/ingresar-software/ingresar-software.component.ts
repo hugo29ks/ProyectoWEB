@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ItemServicio} from "../servicios/item.servicio";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-ingresar-software',
@@ -8,7 +9,8 @@ import {ItemServicio} from "../servicios/item.servicio";
 })
 export class IngresarSoftwareComponent implements OnInit {
 
-  constructor(private _itemServicio: ItemServicio) { }
+  constructor(private _itemServicio: ItemServicio,
+              private _router: Router) { }
 
   nombreSoftware = "";
   fabricanteSoftware = "";
@@ -24,7 +26,19 @@ export class IngresarSoftwareComponent implements OnInit {
   }
 
   guardar() {
-    this._itemServicio.saveSoftware(this.nombreSoftware, this.fabricanteSoftware, this.codigoLicencia, this.arquitectura, this.tiempoValidez, this.adquisionSoftware, this.proveedorSoftware, this.empleadoSoftware, this.comentarioSodtware).subscribe();
+    if(this.nombreSoftware === "" &&
+      this.fabricanteSoftware === "" &&
+      this.codigoLicencia === "" &&
+      this.arquitectura === "" &&
+      this.tiempoValidez === "" &&
+      this.adquisionSoftware === "" &&
+      this.proveedorSoftware === "" &&
+      this.empleadoSoftware === "") {
+      console.log("Error campos vacios");
+    }
+    else {
+      this._itemServicio.saveSoftware(this.nombreSoftware, this.fabricanteSoftware, this.codigoLicencia, this.arquitectura, this.tiempoValidez, this.adquisionSoftware, this.proveedorSoftware, this.empleadoSoftware, this.comentarioSodtware).subscribe();
+      this._router.navigate(['/mostrar-software']);
+    }
   }
-
 }
