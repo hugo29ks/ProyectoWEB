@@ -1,91 +1,97 @@
 <app-nav-bar></app-nav-bar>
 <div class="container">
-    <div class="row centrar">
-        <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INGRESAR SOFTWARE</h2>
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10"></div>
-        <div class="input-group mb-1 col-sm-5">
-            <div class="input-group-prepend">
-                <span class="input-group-text mb-3" id="basic-addon1">Nombre</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Ejemplo: Danilo Angamarca" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="input-group mb-1 col-sm-5">
-            <div class="input-group-prepend">
-                <span class="input-group-text mb-3" id="basic-addon1">Año de adquisicion</span>
-            </div>
-            <input type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10"></div>
-        <div class="input-group mb-3 col-sm-4">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
-                <option value="1">Laptop</option>
-                <option value="2">Desktop</option>
-            </select>
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="input-group mb-3 col-sm-4">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Proveedor</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
-                <option value="1">TecnoMega</option>
-                <option value="2">XP Mayoristas</option>
-                <option value="3">InterTelnet</option>
-            </select>
-        </div>
-
-
-
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10"></div>
-        <div class="input-group mb-2 col-sm-4">
-            <div class="input-group-prepend">
-                <span class="input-group-text mb-3" id="basic-addon1">N° de Serie</span>
-            </div>
-            <input type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <div class="col-sm-2"></div>
-        <div class="input-group mb-4 col-sm-4">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Usuario</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </div>
-
-
-        <div class="col-sm-2"></div>
-        <button type="button" class="btn btn-primary btn-lg btn-block mb-2 col-sm-5">GUARDAR</button>
-
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10"></div>
-        <div class="input-group mb-4 col-sm-4">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Estado</label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Elegir...</option>
-                <option value="1">Activo</option>
-                <option value="2">En espera</option>
-                <option value="3">De Baja</option>
-            </select>
-        </div>
-        <div class="col-sm-2"></div>
-        <button type="button" class="btn btn-secondary btn-lg btn-block mb-2 col-sm-5">CANCELAR</button>
-
+  <div class="row centrar">
+    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INGRESAR SOFTWARE</h2>
+    <!--1-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="nombreSoftware">Nombre</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="nombreSoftware">
     </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="fabricanteSoftware">Fabricante</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="fabricanteSoftware">
+    </div>
+    <!--2-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="codigoLicencia">Licenca</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="codigoLicencia">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-4 col-sm-4">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="arquitectura">Arquitectura</label>
+      </div>
+      <select class="custom-select" id="arquitectura" [(ngModel)]="arquitectura">
+        <option selected>Elegir...</option>
+        <option value="1">x64</option>
+        <option value="2">x32</option>
+      </select>
+    </div>
+
+    <!--3-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="tiempoValidez">Tiempo Validez</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="tiempoValidez">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="adquisionSoftware">Adquision</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="adquisionSoftware">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="proveedorSoftware">Proveedor</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="proveedorSoftware">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="empleadoSoftware">Empleado</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="empleadoSoftware">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="comentarioSodtware">Comentario</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="comentarioSodtware">
+    </div>
+    <div class="col-sm-1"></div>
+
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-primary btn-lg btn-block mb-2 col-sm-5" (click)="guardar()">GUARDAR</button>
+
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-secondary btn-lg btn-block mb-2 col-sm-5">CANCELAR</button>
+
+  </div>
 
 </div>
